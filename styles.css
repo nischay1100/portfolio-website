@@ -1,0 +1,294 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background 0.5s ease; /* Smooth background transition */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+}
+
+/* Profile Photo Styles */
+.profile-photo {
+    border-radius: 50%; /* Circular photo */
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    border: 5px solid #ffcc00; /* Border around photo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Different Backgrounds for Each Page */
+body.index {
+    background: linear-gradient(135deg, #f0f0f0, #d9d9d9); /* Light gray gradient */
+}
+
+body.about {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light blue gradient */
+}
+
+body.projects {
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange gradient */
+}
+
+body.contact {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0); /* Light pink gradient */
+}
+
+/* Navigation Button Styles */
+.navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #6a11cb;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    .profile-photo {
+        width: 100px; /* Smaller photo for mobile */
+        height: 100px;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Resume Page Background */
+body.resume {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume-container:hover {
+    transform: scale(1.02); /* Floating effect */
+}
+
+/* Profile Image */
+.resume-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #2575fc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Resume Card (Top Section) */
+.resume-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.resume-card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.title {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Download Resume Button */
+.resume-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.resume-btn:hover {
+    background: #6a11cb;
+    transform: scale(1.1);
+}
+
+/* Resume Content */
+.resume-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.resume-content h3 {
+    color: #2575fc;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.resume-content p, .resume-content ul {
+    color: #333;
+    font-size: 16px;
+}
+
+.resume-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resume-content ul li {
+    padding: 5px 0;
+}
+
+/* Links */
+.resume-content a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resume-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .resume-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
